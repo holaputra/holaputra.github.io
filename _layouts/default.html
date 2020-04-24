@@ -1,20 +1,24 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<html lang='en'>
 
-  {%- include head.html -%}
+{% include head.html %}
 
-  <body>
+<body>
 
-    {%- include header.html -%}
+  {% include analytics.html %}
 
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </main>
+  <div class='js-off-canvas-container c-off-canvas-container'>
+    {% include header.html %}
 
-    {%- include footer.html -%}
+    {{ content }}
 
-  </body>
+    {% include footer.html %}
+  </div>
+
+  <script src="{{ '/js/jquery-3.1.1.min.js' | prepend: site.baseurl }}"> </script>
+  <script src="{{ '/js/evil-icons.min.js' | prepend: site.baseurl }}">   </script>
+  <script src="{{ '/js/jquery.fitvids.js' | prepend: site.baseurl }}">   </script>
+  <script src="{{ '/js/app.js' | prepend: site.baseurl }}">              </script>
+</body>
 
 </html>

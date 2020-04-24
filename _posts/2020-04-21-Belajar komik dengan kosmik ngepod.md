@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Belajar komik dari podcast Kosmik Ngepod
+title:  "Belajar komik dari podcast Kosmik Ngepod"
 date:   2020-04-21 15:24:00 +0700
 ---
 

@@ -33,9 +33,12 @@ disqus:
     shortname: holaputr
     url: https://holaputra.github.io
 
+
 # Build settings
+export JEKYLL_ENV=production
 plugins:
   - jekyll-feed
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.

@@ -8,7 +8,8 @@ layout: default
 {% for post in paginator.posts %}
 <li><a href="{{post.url | prepend: site.baseurl}}"><h3>{{post.title}}</h3></a></li>
 {% endfor %}
-
+{%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        <span class="post-meta">{{ post.date | date: date_format }}</span>
 
 <!-- pagination -->
 {% if paginator.total_pages > 1 %}

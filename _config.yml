@@ -28,14 +28,9 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: holaputra
 permalink: pretty
 
-#pagination
-paginate: 5
-paginate_path: "/posts/page:num/"
-
 # Build settings
 plugins:
   - jekyll-feed
-  - jekyll-paginate
 
 # Pages path
 defaults:

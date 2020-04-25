@@ -220,7 +220,8 @@
   @include relative-font-size(2.625);
   letter-spacing: -1px;
   line-height: 1;
-  h1 { text-align: center }
+  @include center
+
 
   @include media-query($on-laptop) {
     @include relative-font-size(2.25);

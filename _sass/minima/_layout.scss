@@ -222,7 +222,7 @@
   @include relative-font-size(2.5);
   letter-spacing: -1px;
   line-height: 1;
-  text-align: justify;
+  text-align: center;
 
   @include media-query($on-laptop) {
     @include relative-font-size(2.25);
